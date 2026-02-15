@@ -8,9 +8,11 @@ def extract_from_excel(input_path: str) -> List[pd.DataFrame]:
     """
     Function to read Excel files from a specific folder, convert them to pandas Dataframes, and append these dataframes into a list.
 
-    args: input_path (str): file path with the Excel files
+    args:
+    input_path (str): file path with the Excel files
 
-    return: Dataframes list
+    return:
+    list with multiple pandas Dataframes
     """
     files = glob.glob(os.path.join(input_path, "*.xlsx"))
 
@@ -22,5 +24,5 @@ def extract_from_excel(input_path: str) -> List[pd.DataFrame]:
 
 
 if __name__ == "__main__":
-    dataframe_list = extract_from_excel("../data/input")
+    dataframe_list = extract_from_excel("../../data/input")
     print(dataframe_list)

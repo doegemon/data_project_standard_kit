@@ -6,9 +6,11 @@ def concat_dataframes(df_list: List[pd.DataFrame]) -> pd.DataFrame:
     """
     Function to concat all dataframes from a list into a single dataframe.
 
-    args: df_list (List[pd.DataFrame]): a list containing multiple pandas dataframes
+    args:
+    df_list (List[pd.DataFrame]): a list containing multiple pandas Dataframes
 
-    return: a single dataframe
+    return:
+    a single dataframe
     """
     if not df_list:
         raise ValueError("There are no dataframes to concat.")
