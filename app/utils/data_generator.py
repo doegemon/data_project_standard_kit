@@ -78,7 +78,7 @@ def generate_input_files(
 
         print(f"File n. {i} created successfully.")
 
-    return "Files created successfully."
+    return print("Files created successfully.")
 
 
 if __name__ == "__main__":
