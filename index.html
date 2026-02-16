@@ -10,6 +10,8 @@
       
       
       
+        <link rel="next" href="details/">
+      
       
         
       
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#etl-pipeline-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Welcome to MkDocs
+              Home
             
           </span>
         </div>
@@ -242,7 +244,7 @@
   <span class="md-ellipsis">
     
   
-    Welcome to MkDocs
+    Home
   
 
     
@@ -260,7 +262,7 @@
   <span class="md-ellipsis">
     
   
-    Welcome to MkDocs
+    Home
   
 
     
@@ -286,10 +288,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Commands
+        Overview
       
     </span>
   </a>
@@ -297,10 +299,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#details" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project layout
+        Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Information
       
     </span>
   </a>
@@ -311,6 +324,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="details/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Details
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -342,10 +382,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Commands
+        Overview
       
     </span>
   </a>
@@ -353,10 +393,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
+  <a href="#details" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project layout
+        Details
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#additional-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Information
       
     </span>
   </a>
@@ -383,21 +434,24 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+<h1 id="etl-pipeline-documentation">ETL Pipeline - Documentation</h1>
+<p>This is a very simple ETL project focused on using some tools that can (and should) be used in any engineering and data analysis project.</p>
+<p>This documentation serves to show what was developed in this project.</p>
+<h2 id="overview">Overview</h2>
+<p>This project involves creating fictitious data on employee absenteeism for a company that does not exist, with this data spread across several Excel files.</p>
+<p>The pipeline combines all of these files into a single file, with the aim of creating a single source of data. </p>
+<h2 id="details">Details</h2>
+<p>This is what happens when the pipeline is executed:</p>
+<pre class="mermaid"><code>flowchart LR
+    subgraph ETL[Pipeline]
+    A(Multiple Excel Files) --&gt; B[Extract: extract_from_excel]
+    B[Extract: extract_from_excel] --&gt; |Creates a Dataframe list| C[Transform: concat_dataframes]
+    C[Transform: concat_dataframes] --&gt; |Creates a single Dataframe| D[Load: load_excel]
+    D[Load: load_excel] --&gt; |Dataframe is converted to Excel format| E(Output: single Excel file)
+
+    end</code></pre>
+<h2 id="additional-information">Additional Information</h2>
+<p>If you want to know more details about the project, you can access its <a href="https://github.com/doegemon/data_project_standard_kit">repository</a>.</p>
 
 
 
