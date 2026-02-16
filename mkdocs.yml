@@ -1,0 +1,24 @@
+site_name: ETL Pipeline - Data Project Default Kit
+theme:
+  name: material
+  palette:
+    primary: blue
+  language: en
+
+nav:
+  - Home: index.md
+  - Details: details.md
+
+repo_name: "doegemon/data_project_standard_kit"
+repo_url: "https://github.com/doegemon/data_project_standard_kit"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python

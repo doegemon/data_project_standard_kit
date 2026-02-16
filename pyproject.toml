@@ -13,6 +13,11 @@ openpyxl = "^3.1.5"
 faker = "^40.1.2"
 pytest = "^9.0.2"
 taskipy = "^1.14.1"
+mkdocs = "^1.6.1"
+mkdocstrings-python = "^2.0.2"
+pygments = "^2.19.2"
+mkdocs-material = "^9.7.1"
+pymdown-extensions = "^10.21"
 
 
 [build-system]
