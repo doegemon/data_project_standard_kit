@@ -1,0 +1,7 @@
+PAREI NA PARTE DE utilizar o taskpy (3:00:07)
+
+falta MKDOCS
+
+falta CI/CD
+
+falta README
