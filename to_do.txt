@@ -1,3 +1,0 @@
-falta CI/CD (3:47)
-
-falta README
