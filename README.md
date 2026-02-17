@@ -11,7 +11,9 @@ The main goal of this project is to provide a standardized foundation and framew
 - Testing with ```pytest```: Ensure your code works as expected by creating unit and integration tests.
 - Creating tasks with ```taskipy```: creating command shortcuts so you don't have to run one command at a time.
 - Project documentation with ```mkdocs```: Learning how to document the project with MKDocs and publish the documentation on GitHub Pages.
-    > The ```mkdocs``` documentation for this basic ETL project can be found [here](https://doegemon.github.io/data_project_standard_kit/).
+
+    - The ```mkdocs``` documentation for this basic ETL project can be found [here](https://doegemon.github.io/data_project_standard_kit/).
+
 - Automation and CI/CD: Set up continuous integration via GitHub Workflows to maintain project quality.
 
 ## References
